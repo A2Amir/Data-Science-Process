@@ -96,3 +96,36 @@ For these first two questions, I did not need step 4. In this [notebooks](https:
 6. Fancy machine learning algorithms
 
 With that, you will be getting a more in depth look at these items, but it is worth mentioning (given the massive amount of hype) that they do not solve all the problems. Deep learning cannot turn bad data into good conclusions. Or bad questions into amazing results.
+
+
+# 3. Modeling
+
+By solving the first two questions, I understood I did not need to do any predictive modeling. I only used descriptive and a little inferential statistics to retrieve the results. Therefore, all steps of CRISP-DM were not necessary for these first two questions.
+However, for the last two questions:
+
+1.	How well can we predict an individual's salary? What aspects correlate well to salary?
+2.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
+I will need to use a predictive model. I will need to pick up at step 3 to answer these two questions,
+
+Predictive models are one type of machine learning algorithm, known as supervised machine learning. A simplified four-step process for modeling using scikit-learn is to 
+
+* First instantiate the model. 
+* Second, to fit the model to the training data. 
+* Third, predict using the fitted model on some test data and then 
+* Finally score the model using a metric to evaluate how well it performs. 
+
+I might use modelling to predict salary for an individual in this data set but a quick look through the dataset shows a number of factors that should be able to help me better understand more about an individual salary. 
+
+They're **quantitative factors** like:
+ 
+* The number of hours a week and individual works 
+* How satisfied they are with their job or their career. 
+
+They're also **categorical variables** like:
+ 
+* The country they live in 
+* Their company size 
+* Their formal education. 
+
+When building supervised machine learning models, I am looking for a way to take all of these inputs and predict an individual value in this case, the individual salary. 
+
