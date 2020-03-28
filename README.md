@@ -62,11 +62,38 @@ In the previous section were introduced the four questions that I will focus on 
 
 The next step in the process is about gathering the data and organizing it in a way that will allow us to answer our business questions. Fortunately Stack Overflow already gathered the data. The wrangling and gathering  process is said to be the most time-consuming, often taking 80 percent of the data analysis process. 
 
-First, check [this exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/How%20To%20Break%20Into%20the%20Field.ipynb) to take a look at the datasets and see how I might answer the first question about how to break into the field of becoming a developer according to the survey results. 
+* First, check [this exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/How%20To%20Break%20Into%20the%20Field.ipynb) to take a look at the datasets and see how I might answer the first question about how to break into the field of becoming a developer according to the survey results. 
+
+* Then check this [exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Bootcamps.ipynb) to see how I answered the second question about the placement and salaries of those who attended a coding bootcamp.
+
+* Third, in this [notebook](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Job%20Satisfaction.ipynb), I am going to look at  job satisfaction according to the survey results.
 
 
+As you may have already noticed from answering the first two questions, not every data science problem involves the fanciest deep learning or machine learning algorithm.In the [first](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/How%20To%20Break%20Into%20the%20Field.ipynb) [two](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Bootcamps.ipynb) nootbooks I only used descriptive and a little inferential statistics to retrieve the results.
+
+Therefore, all steps of CRISP-DM were not necessary for these first two questions. CRISP-DM states 6 steps:
 
 
+1. Business Understanding
+2. Data Understanding
+3. Prepare Data
+4. Data Modeling
+5. Evaluate the Results
+6. Deploy
 
+For these first two questions, I did not need step 4. In this [notebooks](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/How%20To%20Break%20Into%20the%20Field.ipynb), I performed steps 3 and 5 without needing step 4 at all. A lot of the hype in data science, artificial intelligence, and deep learning is integrated into step 4, but there are still plenty of questions to be answered not using machine learning, artificial intelligence, and deep learning.
 
+**All Data Science Problems Involve**
 
+1.	Curiosity.
+2.	The right data.
+3.	A tool of some kind (Python, Tableau, Excel, R, etc.) used to find a solution (You could use your head, but that would be inefficient with the massive amounts of data being generated in the world today).
+4.	Well communicated or deployed solution.
+
+**Extra Useful Tools to Know But That Are NOT Necessary for ALL Projects**
+5. Deep Learning
+6. Fancy machine learning algorithms
+
+4.	Well communicated or deployed solution.
+
+With that, you will be getting a more in depth look at these items, but it is worth mentioning (given the massive amount of hype) that they do not solve all the problems. Deep learning cannot turn bad data into good conclusions. Or bad questions into amazing results.
