@@ -9,7 +9,7 @@ However, there's actually a common process used to find many solutions in Data S
 ##
 1. Developing business understanding. 
 2. Developing data understanding. 
-3. Prepping the data to be analyzed. 
+3. Preparing the data to be analyzed. 
 4. Modeling the data. 
 5. Evaluating the results to answer the questions of interest 
 6. Deploying changes based on the results of the analysis. 
