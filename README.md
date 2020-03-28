@@ -1,4 +1,4 @@
-# 1. Introduction
+# Introduction
 
 This Repo is about the process used for many data science problems. This will serve us as a useful guide on how to approach future data science problems.
  
@@ -16,7 +16,7 @@ However, there's actually a common process used to find many solutions in Data S
 I will look at each of these phases a bit closer in upcoming sections.
 
 
-## Business & Data understanding
+## 1. Business & Data understanding
 
 In this section I am going to take a look at the first two steps of the CRISP-DM process in a bit more detail. First, CRISP-DM says I need business understanding, meaning understanding the problem. For examples each of these questions falls under business understanding. 
 
@@ -28,7 +28,7 @@ In this section I am going to take a look at the first two steps of the CRISP-DM
 The second step of the CRISP-DM process is data understanding. This means I need to gain an understanding of the data necessary to answer the question. Sometimes I might have a mountain of data at my disposal that I need to dig through to find insights. 
 
 <p align="right">
-<img src="./imgs/1.png" alt="" width="600" height="400">
+<img src="./imgs/1.png" alt="" width="500" height="400">
 </p>
 
 
@@ -52,5 +52,19 @@ In the rest of this Repo I will be using the following business questions and St
 ##### Data Understanding
 
 I will be using the Stackoverflow survey data to get some insight into each of these questions. In order to get a better understanding of the data you can take a look at some of the characteristics of the datasets by checking [this exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/A%20Look%20at%20the%20Data.ipynb). 
+
+
+## 2. Data Preparation: Gathering & Wrangling
+
+In the previous section were introduced the four questions that I will focus on while working on the remaining steps in the CRISP-DM process. 
+
+The next step in the process is about gathering the data and organizing it in a way that will allow us to answer our business questions. Fortunately Stack Overflow already gathered the data. The wrangling and gathering  process is said to be the most time-consuming, often taking 80 percent of the data analysis process. 
+
+First, check [this exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/How%20To%20Break%20Into%20the%20Field.ipynb) to take a look at the datasets and see how I might answer the first question about how to break into the field of becoming a developer according to the survey results. 
+
+
+
+
+
 
 
