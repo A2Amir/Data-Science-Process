@@ -91,9 +91,8 @@ For these first two questions, I did not need step 4. In this [notebooks](https:
 4.	Well communicated or deployed solution.
 
 **Extra Useful Tools to Know But That Are NOT Necessary for ALL Projects**
+
 5. Deep Learning
 6. Fancy machine learning algorithms
-
-4.	Well communicated or deployed solution.
 
 With that, you will be getting a more in depth look at these items, but it is worth mentioning (given the massive amount of hype) that they do not solve all the problems. Deep learning cannot turn bad data into good conclusions. Or bad questions into amazing results.
