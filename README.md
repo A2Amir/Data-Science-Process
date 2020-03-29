@@ -105,27 +105,70 @@ However, for the last two questions:
 
 1.	How well can we predict an individual's salary? What aspects correlate well to salary?
 2.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
-I will need to use a predictive model. I will need to pick up at step 3 to answer these two questions,
 
-Predictive models are one type of machine learning algorithm, known as supervised machine learning. A simplified four-step process for modeling using scikit-learn is to 
+I will need to use a predictive model. I will need to pick up at step 3 to answer these two questions. Predictive models are one type of machine learning algorithm, known as supervised machine learning. A simplified four-step process for modeling using scikit-learn is to 
 
 * First instantiate the model. 
 * Second, to fit the model to the training data. 
-* Third, predict using the fitted model on some test data and then 
+* Third, predict using the fitted model on some test data 
 * Finally score the model using a metric to evaluate how well it performs. 
 
-I might use modelling to predict salary for an individual in this data set but a quick look through the dataset shows a number of factors that should be able to help me better understand more about an individual salary. 
+I use modelling to predict salary for an individual in this dataset but a quick look through the dataset shows a number of factors that should be able to help me better understand more about an individual salary. 
 
 They're **quantitative factors** like:
  
 * The number of hours a week and individual works 
 * How satisfied they are with their job or their career. 
 
-They're also **categorical variables** like:
+They're also **categorical factors** like:
  
 * The country they live in 
 * Their company size 
 * Their formal education. 
 
-When building supervised machine learning models, I am looking for a way to take all of these inputs and predict an individual value in this case, the individual salary. 
+When building supervised machine learning models, I am looking for a way to take all of these inputs and predict an individual value in this case, the individual salary. Check this [exercise]( https://github.com/A2Amir/Data-Science-Process/blob/master/Code/What%20Happened.ipynb) to get familiar with the quantitative variables and how to build and fit a model.
+
+As seen in the previous exercise there are two main 'pain' points for passing data to machine learning models in sklearn:
+
+1.	Missing Values
+2.	Categorical Values
+
+Sklearn does not know how I want to treat missing values or categorical variables, and there are lots of methods for working with each. For this section, I will look at common, quick fixes. These methods help us get the models into production quickly, but thoughtful treatment of missing values and categorical variables should be done to remove bias and improve predictions over time.Three strategies for working with missing values include:
+
+1.	We can remove (or “drop”) the rows or columns holding the missing values.
+2.	We can impute the missing values.
+3.	We can build models that work around them, and only use the information provided.
+
+#### Remove or Drop the rows or columns
+
+Though dropping rows and/or columns holding missing values is quite easy to do using numpy and pandas, it is often not appropriate because dropping data from the dataset can lead to bias models, this is also true for imputing data points. Understanding why the data is missing is important before dropping these rows and columns.  
+
+Consider a survey that asks participants 150 questions about their personality type. In this situation I'm likely to give up after two or three questions but If I am asked questions about relationships or financials in the survey, a lack of response to these questions might indicate one personality type over another. Dropping these missing values would remove information that might be to use.
+
+There is a number of situations (like above) in which dropping values is not a good idea. These included
+
+1.	Dropping data values associated with the effort or time an individual put into a survey.
+2.	Dropping data values associated with sensitive information.
+
+In either of these cases, the missing values hold information. A quick removal of the rows or columns associated with these missing values would remove missing data that could be used to better inform models.
+
+**Instead of removing these values, I might keep track of the missing values using indicator values, or counts associated with how many questions an individual skipped.**
+
+There are other cases in which dropping rows or columns associated with missing values would be okay.
+A few instances in which dropping a row might be okay are:
+1.	Dropping missing data associated with mechanical failures.
+2.	The missing data is in a column that you are interested in predicting. 
+Other cases when you should consider dropping data that are not associated with missing data:
+1.	Dropping columns with no variability in the data.
+2.	Dropping data associated with information that you know is not correct.
+In handling removing data, think more about why is this missing or why is this data incorrectly input to see if an alternative solution might be used than dropping the values.
+One common strategy for working with missing data is to understand the proportion of a column that is missing. If a large proportion of a column is missing data, this is a reason to consider dropping it. 
+There are easy ways using pandas to create dummy variables to track the missing values, so I can see if these missing values actually hold information (regardless of the proportion that are missing) before choosing to remove a full column.
+It is time to make sure you are comfortable with the methods for dropping missing values in pandas. You can drop values by row or by column, and you can drop based on whether any value is missing in a particular row or column or all are values in a row or column are missing check these exercise below to get more information about methods of dropping missing values.
+Removing Values Part I
+Removing Data Part II
+
+
+There isn't a universal best way for working with missing data, so exploring different options can help you determine what's best for your situation. 
+
 
