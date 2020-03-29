@@ -139,7 +139,7 @@ Sklearn does not know how I want to treat missing values or categorical variable
 2.	We can impute the missing values.
 3.	We can build models that work around them, and only use the information provided.
 
-#### Remove or Drop the rows or columns
+### 1. Remove or Drop the rows or columns
 
 Though dropping rows and/or columns holding missing values is quite easy to do using numpy and pandas, it is often not appropriate because dropping data from the dataset can lead to bias models, this is also true for imputing data points. Understanding why the data is missing is important before dropping these rows and columns.  
 
@@ -147,8 +147,8 @@ Consider a survey that asks participants 150 questions about their personality t
 
 There is a number of situations (like above) in which dropping values is not a good idea. These included
 
-1.	Dropping data values associated with the effort or time an individual put into a survey.
-2.	Dropping data values associated with sensitive information.
+* Dropping data values associated with the effort or time an individual put into a survey.
+* Dropping data values associated with sensitive information.
 
 In either of these cases, the missing values hold information. A quick removal of the rows or columns associated with these missing values would remove missing data that could be used to better inform models.
 
@@ -156,13 +156,13 @@ In either of these cases, the missing values hold information. A quick removal o
 
 There are other cases in which dropping rows or columns associated with missing values would be okay.A few instances in which dropping a row might be okay are:
 
-1.	Dropping missing data associated with mechanical failures.
-2.	The missing data is in a column that you are interested in predicting. 
+* Dropping missing data associated with mechanical failures.
+* The missing data is in a column that you are interested in predicting. 
 
 Other cases when you should consider dropping data that are not associated with missing data:
 
-1.	Dropping columns with no variability in the data.
-2.	Dropping data associated with information that you know is not correct.
+* Dropping columns with no variability in the data.
+* Dropping data associated with information that you know is not correct.
 
 In handling removing data, think more about why is this missing or why is this data incorrectly input to see if an alternative solution might be used than dropping the values.
 
@@ -176,7 +176,7 @@ It is time to make sure you are comfortable with the methods for dropping missin
 2. [Removing Data Part II](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Removing%20Data%20Part%20II.ipynb)
 
 
-**Notice:There isn't a universal best way for working with missing data, so exploring different options can help you determine what's best for your situation. **
+**Notice:There isn't a universal best way for working with missing data, so exploring different options can help you determine what's best for your situation.**
 
 
-#### Imputing Missing Values
+### 2. Imputing Missing Values
