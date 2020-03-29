@@ -154,21 +154,29 @@ In either of these cases, the missing values hold information. A quick removal o
 
 **Instead of removing these values, I might keep track of the missing values using indicator values, or counts associated with how many questions an individual skipped.**
 
-There are other cases in which dropping rows or columns associated with missing values would be okay.
-A few instances in which dropping a row might be okay are:
+There are other cases in which dropping rows or columns associated with missing values would be okay.A few instances in which dropping a row might be okay are:
+
 1.	Dropping missing data associated with mechanical failures.
 2.	The missing data is in a column that you are interested in predicting. 
+
 Other cases when you should consider dropping data that are not associated with missing data:
+
 1.	Dropping columns with no variability in the data.
 2.	Dropping data associated with information that you know is not correct.
+
 In handling removing data, think more about why is this missing or why is this data incorrectly input to see if an alternative solution might be used than dropping the values.
+
 One common strategy for working with missing data is to understand the proportion of a column that is missing. If a large proportion of a column is missing data, this is a reason to consider dropping it. 
+
 There are easy ways using pandas to create dummy variables to track the missing values, so I can see if these missing values actually hold information (regardless of the proportion that are missing) before choosing to remove a full column.
-It is time to make sure you are comfortable with the methods for dropping missing values in pandas. You can drop values by row or by column, and you can drop based on whether any value is missing in a particular row or column or all are values in a row or column are missing check these exercise below to get more information about methods of dropping missing values.
-Removing Values Part I
-Removing Data Part II
+
+It is time to make sure you are comfortable with the methods for dropping missing values in pandas. You can drop values by row or by column, and you can drop based on whether any value is missing in a particular row or column or all are values in a row or column are missing. check these exercise below to get more information about methods of dropping missing values.
+
+1. [Removing Values Part I](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Removing%20Values.ipynb)
+2. [Removing Data Part II](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Removing%20Data%20Part%20II.ipynb)
 
 
-There isn't a universal best way for working with missing data, so exploring different options can help you determine what's best for your situation. 
+**Notice:There isn't a universal best way for working with missing data, so exploring different options can help you determine what's best for your situation. **
 
 
+#### Imputing Missing Values
