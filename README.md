@@ -180,3 +180,21 @@ It is time to make sure you are comfortable with the methods for dropping missin
 
 
 ### 2. Imputing Missing Values
+
+Imputing values into a data set is probably the most common way professionals work with missing values. However, it's important to understand its drawbacks. First, take a look at some common methods for imputing missing values. These include imputing the mean, the median and the mode for any particular column with missing values. 
+
+We could also just predict missing values using other columns in the dataset. This could use any supervised learning approach you're already familiar with from linear regression to a tree-based approach. 
+
+Or we could find rows that are most similar in the values that are not missing and then fill the missing values with the values from these rows.  In this case notice, all of these columns have matching values but here we're missing this point. So we might fill it with the value that we find for this individual. This is like a k-nearest neighbors approach to filling in missing values. 
+
+It's important to remember that by imputing these values, using any of these methods, you're diluting the importance of the feature. Variability in the features is what allows you to use them to predict any variable better. By imputing values, you have the pro and con(see Image below)
+
+<p align="right">
+<img src="./imgs/2.png" alt="" width="500" height="400">
+</p>
+
+Regardless the imputation approach, you should be very cautious of the BIAS you are imputing into any model that uses these imputed values. Though imputing values is very common and often leads to better predictive power in machine learning models, it can lead to over generalizations. In extremely advanced techniques in Data Science, this can even mean ethical implications. Machines can only 'learn' from the data they are provided. If you provide biased data (due to imputation, poor data collection, etc.), it should be no surprise, you will achieve results that are biased.
+
+To get to know two of the most common ways to impute values check these notebooks.
+Imputation Methods
+Imputing Values
