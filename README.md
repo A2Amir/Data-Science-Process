@@ -217,42 +217,34 @@ On the downside:
 * When a categorical variable has lots of levels, creating dummy variables encoded in the way,can add a lot of new columns into your dataset (for example in this dataset, we're working with 42,000 additional columns). If the number of columns were to exceed the number of rows, many machine learning algorithms will be unable to optimize for a solution at all. 
 
 
-To implement this technique to see how it works out check these exercises below:
-
-* [Categorical Variables](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Categorical%20Variables.ipynb)
+To implement this technique to see how it works out check this exercise,* [Categorical Variables](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Categorical%20Variables.ipynb)
 
 #### Overfitting
 
 I saw that in [the previous exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Categorical%20Variables.ipynb) that the current results showed great fit for the model on the training data. However, these results are falling short on the test data.This is a prime example of overfitting. Overfitting is when we are able to build a model that will perform well on the data it has seen before but it isn't able to predict well on new situations. 
 
-Overfitting is a common problem when the model does not generalize to data it has not seen before. Assuring you build models that not only work for the data the model was trained on, but also generalize to new (test) data, is key to building models that will be successful to deploy and that will become successful in production.
-
-See this [Exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Putting%20It%20All%20Together.ipynb) to learn how to discard overfitting for a model.
+Overfitting is a common problem when the model does not generalize to data it has not seen before. Assuring you build models that not only work for the data the model was trained on, but also generalize to new (test) data, is key to building models that will be successful to deploy and that will become successful in production.See this [Exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Putting%20It%20All%20Together.ipynb) to learn how to avoid overfitting for a model.
 
 
 #### Results
 
-In this section I am going to take a quick recap and pull together the results I should have arrived through my analysis to answer the business questions.
+In this section I am going to take a quick recap and pull together the results I arrived through my analysis to answer the business questions.
 
 
-the results for the first question regarding how breaking into the field are:
+The results for the first question regarding how breaking into the field are:
 
+* The largest proportion of the individuals suggests breaking into the field by taking online courses.
+* There was evidence to suggest that those with the higher degrees are more likely to suggest others pursue higher degrees to break into the field.
+* The average salary was highest for those that suggested contributing to open source as a method to break into the field.
 
-The largest proportion of the individuals suggests breaking into the field by taking online courses.
-There was evidence to suggest that those with the higher degrees are more likely to suggest others pursue higher degrees to break into the field.
-The average salary was highest for those that suggested contributing to open source as a method to break into the field.
+The result I found in the data when looking at bootcamp graduation rates and salaries is:
 
+* The bootcamp information was difficult to parse from the dataset.
 
+The results of the predictive model for predicting salary are:
 
-All results I found in the data when looking at bootcamp graduation rates and salaries is:
-
-The bootcamp information was difficult to parse from the dataset.
-
-
-the results of the predictive model for predicting salary are:
-
-	I found that where an individual lives is one of the greatest indicators of salary
-	I found that the years of experience was one of the greatest indicators of salary
+* I found that where an individual lives is one of the greatest indicators of salary
+* I found that the years of experience was one of the greatest indicators of salary
 
 ## Evaluate & Deploy
 
@@ -260,9 +252,7 @@ There are two main ways I can utilize the results of my analysis. One way is to 
 
 The second way to utilize the results of an analysis is to communicat my insights from my data to persuade others to make a decision or take a certain action. 
 
-To communicate with other programmers, it's important to share my ideas and code. 
-For this, I can use GitHub. To communicate with managers and others within my company, 
-I will need to persuade them with written ideas and visuals. For this, it is common to use dashboards and emails. To practice these skills and build my portfolio, you can use and create  a post which will be done on Medium. 
+To communicate with other programmers, it's important to share my ideas and code. For this, I can use GitHub. To communicate with managers and others within my company, I will need to persuade them with written ideas and visuals. For this, it is common to use dashboards and emails. To practice these skills and build my portfolio, you can use and create a post which will be done on Medium. 
 
 
 
