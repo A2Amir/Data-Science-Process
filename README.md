@@ -18,7 +18,7 @@ However, there's actually a common process used to find many solutions in Data S
 I will look at each of these phases a bit closer in upcoming sections.
 
 
-## 1. Business & Data understanding
+## Business & Data understanding
 
 In this section I am going to take a look at the first two steps of the CRISP-DM process in a bit more detail. First, CRISP-DM says I need business understanding, meaning understanding the problem. For examples each of these questions falls under business understanding. 
 
@@ -41,22 +41,23 @@ Other times I may need to collect data, which means I will have to understand wh
 throughout this repo, I will get hands-on practice with two datasets from Stack Overflow developer survey results, from 2017. [This dataset](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/survey_results_public.csv) can provide some insight to developers around the world and get an idea of their experiences. Anything from their advice to other developers, to how they learn new skills, to where they live, or what programming languages they use, can all be understood from this dataset.
 
 
-## Business & Data Understanding – Example
+#### Business & Data Understanding – Example
 
 In the rest of this Repo I will be using the following business questions and Stackoverflow survey data to to answer these questions.
-##### Business Questions
+
+#### Business Questions
 
 1.	what do those employed in industry suggest to help others enter the field? (How do I break into the field?)
 2.	What are the placement and salaries of those who attended a coding bootcamp?
 3.	How well can we predict an individual's salary? What aspects correlate well to salary?
 4.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
 
-##### Data Understanding
+#### Data Understanding
 
 I will be using the Stackoverflow survey data to get some insight into each of these questions. In order to get a better understanding of the data you can take a look at some of the characteristics of the datasets by checking [this exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/A%20Look%20at%20the%20Data.ipynb). 
 
 
-## 2. Data Preparation: Gathering & Wrangling
+## Data Preparation: Gathering & Wrangling
 
 In the previous section were introduced the four questions that I will focus on while working on the remaining steps in the CRISP-DM process. 
 
@@ -72,7 +73,6 @@ The next step in the process is about gathering the data and organizing it in a 
 As you may have already noticed from answering the first two questions, not every data science problem involves the fanciest deep learning or machine learning algorithm.In the [first](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/How%20To%20Break%20Into%20the%20Field.ipynb) [two](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Bootcamps.ipynb) nootbooks I only used descriptive and a little inferential statistics to retrieve the results.
 
 Therefore, all steps of CRISP-DM were not necessary for these first two questions. CRISP-DM states 6 steps:
-
 
 1. Business Understanding
 2. Data Understanding
@@ -98,7 +98,7 @@ For these first two questions, I did not need step 4. In this [notebooks](https:
 With that, you will be getting a more in depth look at these items, but it is worth mentioning (given the massive amount of hype) that they do not solve all the problems. Deep learning cannot turn bad data into good conclusions. Or bad questions into amazing results.
 
 
-# 3. Modeling
+## Modeling
 
 By solving the first two questions, I understood I did not need to do any predictive modeling. I only used descriptive and a little inferential statistics to retrieve the results. Therefore, all steps of CRISP-DM were not necessary for these first two questions.
 However, for the last two questions:
@@ -139,7 +139,7 @@ Sklearn does not know how I want to treat missing values or categorical variable
 2.	We can impute the missing values.
 3.	We can build models that work around them, and only use the information provided.
 
-### 1. Remove or Drop the rows or columns
+#### Remove or Drop the rows or columns
 
 Though dropping rows and/or columns holding missing values is quite easy to do using numpy and pandas, it is often not appropriate because dropping data from the dataset can lead to bias models, this is also true for imputing data points. Understanding why the data is missing is important before dropping these rows and columns.  
 
@@ -179,7 +179,7 @@ It is time to make sure you are comfortable with the methods for dropping missin
 **Notice:There isn't a universal best way for working with missing data, so exploring different options can help you determine what's best for your situation.**
 
 
-### 2. Imputing Missing Values
+#### Imputing Missing Values
 
 Imputing values into a data set is probably the most common way professionals work with missing values. However, it's important to understand its drawbacks. First, take a look at some common methods for imputing missing values. These include imputing the mean, the median and the mode for any particular column with missing values. 
 
@@ -193,8 +193,76 @@ It's important to remember that by imputing these values, using any of these met
 <img src="./imgs/2.png" alt="" width="500" height="250">
 </p>
 
-Regardless the imputation approach, you should be very cautious of the BIAS you are imputing into any model that uses these imputed values. Though imputing values is very common and often leads to better predictive power in machine learning models, it can lead to over generalizations. In extremely advanced techniques in Data Science, this can even mean ethical implications. Machines can only 'learn' from the data they are provided. If you provide biased data (due to imputation, poor data collection, etc.), it should be no surprise, you will achieve results that are biased.
+Regardless the imputation approach, you should be very cautious of the BIAS you are imputing into any model that uses these imputed values. Though imputing values is very common and often leads to better predictive power in machine learning models, it can lead to over generalizations. In extremely advanced techniques in Data Science, this can even mean  [ethical implications](https://intelligence.org/files/EthicsofAI.pdf). Machines can only 'learn' from the data they are provided. If you provide biased data (due to imputation, poor data collection, etc.), it should be no surprise, you will achieve results that are biased.
 
 To get to know two of the most common ways to impute values check these notebooks.
-Imputation Methods
-Imputing Values
+
+* [Imputation Methods](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Imputation%20Methods%20and%20Resources%20-.ipynb)
+* [Imputing Values](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Imputing%20Values.ipynb)
+
+#### Working With Categorical Variables 
+
+One of the most common methods for encoding categorical variables is with ones and zeros. 
+
+<p align="right">
+<img src="./imgs/3.png" alt="" width="500" height="400">
+</p>
+
+There are advantages to this method: 
+
+* With linear models, you have the ability to easily interpret the weights on each of these values.It provides a lot of flexibility in determining how each level of the categorical variable influences the response. 
+
+On the downside:
+
+* When a categorical variable has lots of levels, creating dummy variables encoded in the way,can add a lot of new columns into your dataset (for example in this dataset, we're working with 42,000 additional columns). If the number of columns were to exceed the number of rows, many machine learning algorithms will be unable to optimize for a solution at all. 
+
+
+To implement this technique to see how it works out check these exercises below:
+
+* [Categorical Variables](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Categorical%20Variables.ipynb)
+
+#### Overfitting
+
+I saw that in [the previous exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Categorical%20Variables.ipynb) that the current results showed great fit for the model on the training data. However, these results are falling short on the test data.This is a prime example of overfitting. Overfitting is when we are able to build a model that will perform well on the data it has seen before but it isn't able to predict well on new situations. 
+
+Overfitting is a common problem when the model does not generalize to data it has not seen before. Assuring you build models that not only work for the data the model was trained on, but also generalize to new (test) data, is key to building models that will be successful to deploy and that will become successful in production.
+
+See this [Exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Putting%20It%20All%20Together.ipynb) to learn how to discard overfitting for a model.
+
+
+#### Results
+
+In this section I am going to take a quick recap and pull together the results I should have arrived through my analysis to answer the business questions.
+
+
+the results for the first question regarding how breaking into the field are:
+
+
+The largest proportion of the individuals suggests breaking into the field by taking online courses.
+There was evidence to suggest that those with the higher degrees are more likely to suggest others pursue higher degrees to break into the field.
+The average salary was highest for those that suggested contributing to open source as a method to break into the field.
+
+
+
+All results I found in the data when looking at bootcamp graduation rates and salaries is:
+
+The bootcamp information was difficult to parse from the dataset.
+
+
+the results of the predictive model for predicting salary are:
+
+	I found that where an individual lives is one of the greatest indicators of salary
+	I found that the years of experience was one of the greatest indicators of salary
+
+## Evaluate & Deploy
+
+There are two main ways I can utilize the results of my analysis. One way is to deploy my model to automate tasks. Those tasks might be serving an appropriate advertisement to a customer or recommending a movie. 
+
+The second way to utilize the results of an analysis is to communicat my insights from my data to persuade others to make a decision or take a certain action. 
+
+To communicate with other programmers, it's important to share my ideas and code. 
+For this, I can use GitHub. To communicate with managers and others within my company, 
+I will need to persuade them with written ideas and visuals. For this, it is common to use dashboards and emails. To practice these skills and build my portfolio, you can use and create  a post which will be done on Medium. 
+
+
+
