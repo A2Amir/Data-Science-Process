@@ -1,5 +1,18 @@
-# Introduction
 
+
+### Table of Contents
+
+1. [Installation](#installation)
+3. [File Descriptions](#files)
+2. [Data Science Process](#motivation)
+4. [Results](#results)
+5. [Licensing, Author, and Acknowledgements](#licensing)
+
+# 1. Installation <a name="installation"></a>
+
+# 2. File Descriptions <a name="files"></a>
+
+# 3. Data Science Process <a name="motivation"></a>
 This Repo is about the process used for many data science problems. This will serve us as a useful guide on how to approach future data science problems.
  
 Given the large number problems that fall under the umbrella of Data Science and there are a lot of different tools and individual nuances of  a particular company or industry for finding solutions. 
@@ -226,7 +239,16 @@ I saw that in [the previous exercise](https://github.com/A2Amir/Data-Science-Pro
 Overfitting is a common problem when the model does not generalize to data it has not seen before. Assuring you build models that not only work for the data the model was trained on, but also generalize to new (test) data, is key to building models that will be successful to deploy and that will become successful in production.See this [Exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Putting%20It%20All%20Together.ipynb) to learn how to avoid overfitting for a model.
 
 
-#### Results
+## Evaluate & Deploy
+
+There are two main ways I can utilize the results of my analysis. One way is to deploy my model to automate tasks. Those tasks might be serving an appropriate advertisement to a customer or recommending a movie. 
+
+The second way to utilize the results of an analysis is to communicat my insights from my data to persuade others to make a decision or take a certain action. 
+
+To communicate with other programmers, it's important to share my ideas and code. For this, I can use GitHub. To communicate with managers and others within my company, I will need to persuade them with written ideas and visuals. For this, it is common to use dashboards and emails. To practice these skills and build my portfolio, you can use and create a post which will be done on Medium. 
+
+
+# 4. Results <a name="results"></a>
 
 In this section I am going to take a quick recap and pull together the results I arrived through my analysis to answer the business questions.
 
@@ -246,13 +268,4 @@ The results of the predictive model for predicting salary are:
 * I found that where an individual lives is one of the greatest indicators of salary
 * I found that the years of experience was one of the greatest indicators of salary
 
-## Evaluate & Deploy
-
-There are two main ways I can utilize the results of my analysis. One way is to deploy my model to automate tasks. Those tasks might be serving an appropriate advertisement to a customer or recommending a movie. 
-
-The second way to utilize the results of an analysis is to communicat my insights from my data to persuade others to make a decision or take a certain action. 
-
-To communicate with other programmers, it's important to share my ideas and code. For this, I can use GitHub. To communicate with managers and others within my company, I will need to persuade them with written ideas and visuals. For this, it is common to use dashboards and emails. To practice these skills and build my portfolio, you can use and create a post which will be done on Medium. 
-
-
-
+# 5. Licensing, Author, and Acknowledgements <a name="licensing"></a>
