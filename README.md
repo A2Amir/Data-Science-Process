@@ -255,9 +255,20 @@ In this section I am going to take a quick recap and pull together the results I
 
 The results for the first question regarding how breaking into the field are:
 
-* The largest proportion of the individuals suggests breaking into the field by taking online courses.
-* There was evidence to suggest that those with the higher degrees are more likely to suggest others pursue higher degrees to break into the field.
+* The largest proportion of the individuals suggests breaking into the field by taking online courses(see below).
+
+<p align="right">
+<img src="./imgs/4.png" alt="" width="500" height="400">
+</p>
+
+* There was evidence to suggest that those with the higher degrees are more likely to suggest others pursue higher degrees to break into the field (see below).
+
+<p align="right">
+<img src="./imgs/5.png" alt="" width="500" height="400">
+</p>
+
 * The average salary was highest for those that suggested contributing to open source as a method to break into the field.
+
 
 The result I found in the data when looking at bootcamp graduation rates and salaries is:
 
