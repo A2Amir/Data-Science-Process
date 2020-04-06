@@ -24,11 +24,11 @@ However, there's actually a common process used to find many solutions in Data S
 
 ##
 1. [Developing business understanding](#1)
-2. [Developing data understanding](#2) 
+2. [Data understanding](#2) 
 3. [Preparing the data to be analyzed](#3)
-4. [Modeling the data](#4) <a name="4"></a>
-5. [Evaluating the results to answer the questions of interest](#5)<a name="5"></a>
-6. [Deploying changes based on the results of the analysis](#6) <a name="6"></a>
+4. [Modeling the data](#4)
+5. [Evaluating the results to answer the questions of interest](#results)
+6. [Deploying changes based on the results of the analysis](#6) 
 
 ##
 I will look at each of these phases a bit closer in upcoming sections.
@@ -240,7 +240,7 @@ I saw that in [the previous exercise](https://github.com/A2Amir/Data-Science-Pro
 Overfitting is a common problem when the model does not generalize to data it has not seen before. Assuring you build models that not only work for the data the model was trained on, but also generalize to new (test) data, is key to building models that will be successful to deploy and that will become successful in production.See this [Exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Putting%20It%20All%20Together.ipynb) to learn how to avoid overfitting for a model.
 
 
-## Evaluate & Deploy <a name="5"></a>
+## Evaluate & Deploy <a name="6"></a>
 
 There are two main ways I can utilize the results of my analysis. One way is to deploy my model to automate tasks. Those tasks might be serving an appropriate advertisement to a customer or recommending a movie. 
 
