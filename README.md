@@ -9,6 +9,9 @@
 5. [Licensing, Author, and Acknowledgements](#licensing)
 
 # 1. Installation <a name="installation"></a>
+  To install via [Anaconda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) , use the command below, it will automatically install all the liberary used in this Repo.
+
+         conda env create -f environment.yml
 
 # 2. File Descriptions <a name="files"></a>
 
@@ -280,3 +283,6 @@ The results of the predictive model for predicting salary are:
 * I found that the years of experience was one of the greatest indicators of salary
 
 # 5. Licensing, Author, and Acknowledgements <a name="licensing"></a>
+
+Copyright (c) 200 Amir-Ziaee                                         [GNU Lesser General Public License v2.1](https://github.com/A2Amir/Data-Science-Process/blob/master/LICENSE)
+
