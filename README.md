@@ -23,24 +23,35 @@ Given the large number problems that fall under the umbrella of Data Science and
 However, there's actually a common process used to find many solutions in Data Science. This process is known as the **Cross Industry Standard Process for Data Mining or CRISP-DM**. This process has been an industry standard for analyzing data for years and it has six major phases. 
 
 ##
-1. Developing business understanding. 
-2. Developing data understanding. 
-3. Preparing the data to be analyzed. 
-4. Modeling the data. 
-5. Evaluating the results to answer the questions of interest 
-6. Deploying changes based on the results of the analysis. 
+1. [Developing business understanding](#1)
+2. [Developing data understanding](#2) 
+3. [Preparing the data to be analyzed](#3)
+4. [Modeling the data](#4) <a name="4"></a>
+5. [Evaluating the results to answer the questions of interest](#5)<a name="5"></a>
+6. [Deploying changes based on the results of the analysis](#6) <a name="6"></a>
 
 ##
 I will look at each of these phases a bit closer in upcoming sections.
 
 
-## Business & Data understanding
+## Business understanding <a name="1"></a>
 
 In this section I am going to take a look at the first two steps of the CRISP-DM process in a bit more detail. First, CRISP-DM says I need business understanding, meaning understanding the problem. For examples each of these questions falls under business understanding. 
 
 * Are you interested in acquiring new customers? 
 * Are you interested in assessing of a new cancer treatment outperforms existing treatments? 
 * Are you interested in finding a better way to communicate? 
+
+
+#### Business Questions
+In the rest of this Repo I will be using the following business questions and Stackoverflow survey data to to answer these questions.
+
+1.	what do those employed in industry suggest to help others enter the field? (How do I break into the field?)
+2.	What are the placement and salaries of those who attended a coding bootcamp?
+3.	How well can we predict an individual's salary? What aspects correlate well to salary?
+4.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
+
+## Data Understanding <a name="2"></a>
 
 
 The second step of the CRISP-DM process is data understanding. This means I need to gain an understanding of the data necessary to answer the question. Sometimes I might have a mountain of data at my disposal that I need to dig through to find insights. 
@@ -57,23 +68,10 @@ Other times I may need to collect data, which means I will have to understand wh
 throughout this repo, I will get hands-on practice with two datasets from Stack Overflow developer survey results, from 2017. [This dataset](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/survey_results_public.csv) can provide some insight to developers around the world and get an idea of their experiences. Anything from their advice to other developers, to how they learn new skills, to where they live, or what programming languages they use, can all be understood from this dataset.
 
 
-#### Business & Data Understanding – Example
-
-In the rest of this Repo I will be using the following business questions and Stackoverflow survey data to to answer these questions.
-
-#### Business Questions
-
-1.	what do those employed in industry suggest to help others enter the field? (How do I break into the field?)
-2.	What are the placement and salaries of those who attended a coding bootcamp?
-3.	How well can we predict an individual's salary? What aspects correlate well to salary?
-4.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
-
-#### Data Understanding
-
-I will be using the Stackoverflow survey data to get some insight into each of these questions. In order to get a better understanding of the data you can take a look at some of the characteristics of the datasets by checking [this exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/A%20Look%20at%20the%20Data.ipynb). 
+In order to get a better understanding of the data you can take a look at some of the characteristics of the datasets by checking [this exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/A%20Look%20at%20the%20Data.ipynb). 
 
 
-## Data Preparation: Gathering & Wrangling
+## Data Preparation: Gathering & Wrangling <a name="3"></a>
 
 In the previous section were introduced the four questions that I will focus on while working on the remaining steps in the CRISP-DM process. 
 
@@ -114,7 +112,7 @@ For these first two questions, I did not need step 4. In this [notebooks](https:
 With that, you will be getting a more in depth look at these items, but it is worth mentioning (given the massive amount of hype) that they do not solve all the problems. Deep learning cannot turn bad data into good conclusions. Or bad questions into amazing results.
 
 
-## Modeling
+## Modeling <a name="4"></a>
 
 By solving the first two questions, I understood I did not need to do any predictive modeling. I only used descriptive and a little inferential statistics to retrieve the results. Therefore, all steps of CRISP-DM were not necessary for these first two questions.
 However, for the last two questions:
@@ -242,7 +240,7 @@ I saw that in [the previous exercise](https://github.com/A2Amir/Data-Science-Pro
 Overfitting is a common problem when the model does not generalize to data it has not seen before. Assuring you build models that not only work for the data the model was trained on, but also generalize to new (test) data, is key to building models that will be successful to deploy and that will become successful in production.See this [Exercise](https://github.com/A2Amir/Data-Science-Process/blob/master/Code/Putting%20It%20All%20Together.ipynb) to learn how to avoid overfitting for a model.
 
 
-## Evaluate & Deploy
+## Evaluate & Deploy <a name="5"></a>
 
 There are two main ways I can utilize the results of my analysis. One way is to deploy my model to automate tasks. Those tasks might be serving an appropriate advertisement to a customer or recommending a movie. 
 
