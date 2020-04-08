@@ -14,7 +14,7 @@
          conda env create -f environment.yml
 
 # 2. File Descriptions <a name="files"></a>
-
+Through the steps in the data science process you will find links to the corresponding codes, which are stored in the [Code](https://github.com/A2Amir/Data-Science-Process/tree/master/Code) folder
 # 3. Data Science Process <a name="motivation"></a>
 This Repo is about the process used for many data science problems. This will serve us as a useful guide on how to approach future data science problems.
  
