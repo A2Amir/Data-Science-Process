@@ -36,7 +36,7 @@ I will look at each of these phases a bit closer in upcoming sections.
 
 ## Business understanding <a name="1"></a>
 
-In this section I am going to take a look at the first two steps of the CRISP-DM process in a bit more detail. First, CRISP-DM says I need business understanding, meaning understanding the problem. For examples each of these questions falls under business understanding. 
+In this section I am going to take a look at the first steps of the CRISP-DM process in a bit more detail. First, CRISP-DM says I need business understanding, meaning understanding the problem. For examples each of these questions falls under business understanding. 
 
 * Are you interested in acquiring new customers? 
 * Are you interested in assessing of a new cancer treatment outperforms existing treatments? 
