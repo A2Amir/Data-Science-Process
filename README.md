@@ -48,8 +48,8 @@ In the rest of this Repo I will be using the following business questions and St
 
 1.	what do those employed in industry suggest to help others enter the field? (How do I break into the field?)
 2.	What are the placement and salaries of those who attended a coding bootcamp?
-3.	How well can we predict an individual's salary? What aspects correlate well to salary?
-4.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
+3.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
+4.	How well can we predict an individual's salary? What aspects correlate well to salary?
 
 ## Data Understanding <a name="2"></a>
 
@@ -115,10 +115,9 @@ With that, you will be getting a more in depth look at these items, but it is wo
 ## Modeling <a name="4"></a>
 
 By solving the first two questions, I understood I did not need to do any predictive modeling. I only used descriptive and a little inferential statistics to retrieve the results. Therefore, all steps of CRISP-DM were not necessary for these first two questions.
-However, for the last two questions:
+However, for the last questions:
 
 1.	How well can we predict an individual's salary? What aspects correlate well to salary?
-2.	How well can we predict an individual's job satisfaction? What aspects correlate well to job satisfaction?
 
 I will need to use a predictive model. I will need to pick up at step 3 to answer these two questions. Predictive models are one type of machine learning algorithm, known as supervised machine learning. A simplified four-step process for modeling using scikit-learn is to 
 
